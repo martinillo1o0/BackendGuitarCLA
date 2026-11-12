@@ -32,19 +32,19 @@ GuitarsLA Backend es el servidor de la aplicación de guitarras. Expone una API 
 
 ### Capturas de pantalla
 
-Las capturas muestran el formulario del frontend conectado a la API, una guitarra agregada al catálogo y el carrito de la aplicación.
+Las capturas muestran las solicitudes GET y POST probadas en Postman y los registros guardados en PostgreSQL, consultados desde TablePlus.
 
-**Formulario de registro:**
+**Consulta del catálogo con GET:**
 
-![Formulario de registro de guitarra](../GuitarsLA-ts/assets/Boton_Formulario.png)
+![Solicitud GET al endpoint de guitarras con respuesta 200 OK en Postman](./src/assets/Metodo_GETALL.png)
 
-**Guitarra registrada en el catálogo:**
+**Registro de una guitarra con POST:**
 
-![Guitarra guardada y mostrada en el catálogo](../GuitarsLA-ts/assets/Nueva_Guitarra.png)
+![Solicitud POST al endpoint de guitarras con respuesta 201 Created en Postman](./src/assets/Metodo_POST.png)
 
-**Catálogo y carrito:**
+**Registros en PostgreSQL vistos con TablePlus:**
 
-![Evidencia del catálogo y carrito de compras](../GuitarsLA-ts/assets/Evidencia_Funcionamiento.png)
+![Tabla guitars con registros consultada desde TablePlus](./src/assets/TablePlus_Prueba.png)
 
 ---
 
