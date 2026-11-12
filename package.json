@@ -1,0 +1,27 @@
+{
+  "name": "Backend",
+  "version": "1.0.0",
+  "description": "este proyecto servira de practica PERN",
+  "license": "ISC",
+  "author": "Martin Isaias PErez Zarate",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec  ts-node  src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.20",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "express": "^4.18.2",
+    "express-validator": "^7.3.2",
+    "pg": "^8.23.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.8",
+    "sequelize-typescript": "^2.1.6"
+  }
+}
