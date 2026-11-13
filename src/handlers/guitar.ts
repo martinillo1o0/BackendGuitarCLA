@@ -41,6 +41,13 @@ export const createGuitar = async (req: Request, res: Response) => {
 
         await body('price')
             .isFloat({ gt: 0 }).withMessage('El precio debe ser mayor que 0')
+            .custom((value) => {
+                const decimals = (value.toString().split('.')[1] || '').length;
+                if (decimals > 2) {
+                    throw new Error('El precio no puede tener más de 2 decimales');
+                }
+                return true;
+            })
             .run(req);
 
 

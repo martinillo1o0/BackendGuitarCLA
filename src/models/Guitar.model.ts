@@ -20,8 +20,8 @@ class Guitar extends Model{
     })
     description: string
 
-    @Column({
-        type: DataType.FLOAT(6,2)
+  @Column({
+        type: DataType.DECIMAL(6, 2)
     })
     price: number
 }
